@@ -2,6 +2,7 @@
 #define UTILS_HPP
 
 #include <opencv2/opencv.hpp>
+#include <vector>
 
 
 struct Circuit {
@@ -12,5 +13,12 @@ struct Circuit {
 	cv::Point start;
 	cv::Point end;
 };
+
+struct Color
+{
+    int class_color;
+    cv::Scalar color_value;
+};
+
 
 #endif // UTILS_HPP

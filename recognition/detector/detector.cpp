@@ -17,17 +17,13 @@ std::vector<Circuit> ContourDetector::detect(const cv::Mat& image){
 	for (int i = 0; i < contours.size(); i++)
 	{
 		int area = contourArea(contours[i]);
-		std::cout << area << std::endl;
 		std::string objectType;
 
 		if (area > 3000)
 		{
 			double peri = arcLength(contours[i], true);
 			approxPolyDP(contours[i], conPoly[i], 0.02 * peri, true);
-			std::cout << conPoly[i].size() << std::endl;
 			boundRect[i] = boundingRect(conPoly[i]);
-
-			std::cout << "Cord " << boundRect[i].tl().x << ' ' << boundRect[i].tl() << '\n';
 
 			Circuit temp(area, boundRect[i].tl(), boundRect[i].br());
 			arr_detect.push_back(temp);
@@ -36,5 +32,6 @@ std::vector<Circuit> ContourDetector::detect(const cv::Mat& image){
 				//rectangle(img, boundRect[i].tl(), boundRect[i].br(), cv::Scalar(0, 255, 0), 5);
 		}
 	}
+
     return arr_detect;
 }

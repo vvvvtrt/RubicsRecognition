@@ -24,7 +24,7 @@
 /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/recognition/preprocessor/CMakeFiles/install.dir
 /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/recognition/preprocessor/CMakeFiles/install/local.dir
 /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/recognition/preprocessor/CMakeFiles/install/strip.dir
-/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/recognition/classifier/CMakeFiles/classifer.dir
+/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/recognition/classifier/CMakeFiles/classifier.dir
 /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/recognition/classifier/CMakeFiles/edit_cache.dir
 /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/recognition/classifier/CMakeFiles/rebuild_cache.dir
 /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/recognition/classifier/CMakeFiles/list_install_components.dir

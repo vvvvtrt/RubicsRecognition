@@ -162,42 +162,42 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-recognition/classifier/CMakeFiles/classifer.dir/rule:
-	cd /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 recognition/classifier/CMakeFiles/classifer.dir/rule
-.PHONY : recognition/classifier/CMakeFiles/classifer.dir/rule
+recognition/classifier/CMakeFiles/classifier.dir/rule:
+	cd /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 recognition/classifier/CMakeFiles/classifier.dir/rule
+.PHONY : recognition/classifier/CMakeFiles/classifier.dir/rule
 
 # Convenience name for target.
-classifer: recognition/classifier/CMakeFiles/classifer.dir/rule
-.PHONY : classifer
+classifier: recognition/classifier/CMakeFiles/classifier.dir/rule
+.PHONY : classifier
 
 # fast build rule for target.
-classifer/fast:
-	cd /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build && $(MAKE) $(MAKESILENT) -f recognition/classifier/CMakeFiles/classifer.dir/build.make recognition/classifier/CMakeFiles/classifer.dir/build
-.PHONY : classifer/fast
+classifier/fast:
+	cd /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build && $(MAKE) $(MAKESILENT) -f recognition/classifier/CMakeFiles/classifier.dir/build.make recognition/classifier/CMakeFiles/classifier.dir/build
+.PHONY : classifier/fast
 
-classifer.o: classifer.cpp.o
-.PHONY : classifer.o
+classifier.o: classifier.cpp.o
+.PHONY : classifier.o
 
 # target to build an object file
-classifer.cpp.o:
-	cd /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build && $(MAKE) $(MAKESILENT) -f recognition/classifier/CMakeFiles/classifer.dir/build.make recognition/classifier/CMakeFiles/classifer.dir/classifer.cpp.o
-.PHONY : classifer.cpp.o
+classifier.cpp.o:
+	cd /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build && $(MAKE) $(MAKESILENT) -f recognition/classifier/CMakeFiles/classifier.dir/build.make recognition/classifier/CMakeFiles/classifier.dir/classifier.cpp.o
+.PHONY : classifier.cpp.o
 
-classifer.i: classifer.cpp.i
-.PHONY : classifer.i
+classifier.i: classifier.cpp.i
+.PHONY : classifier.i
 
 # target to preprocess a source file
-classifer.cpp.i:
-	cd /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build && $(MAKE) $(MAKESILENT) -f recognition/classifier/CMakeFiles/classifer.dir/build.make recognition/classifier/CMakeFiles/classifer.dir/classifer.cpp.i
-.PHONY : classifer.cpp.i
+classifier.cpp.i:
+	cd /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build && $(MAKE) $(MAKESILENT) -f recognition/classifier/CMakeFiles/classifier.dir/build.make recognition/classifier/CMakeFiles/classifier.dir/classifier.cpp.i
+.PHONY : classifier.cpp.i
 
-classifer.s: classifer.cpp.s
-.PHONY : classifer.s
+classifier.s: classifier.cpp.s
+.PHONY : classifier.s
 
 # target to generate assembly for a file
-classifer.cpp.s:
-	cd /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build && $(MAKE) $(MAKESILENT) -f recognition/classifier/CMakeFiles/classifer.dir/build.make recognition/classifier/CMakeFiles/classifer.dir/classifer.cpp.s
-.PHONY : classifer.cpp.s
+classifier.cpp.s:
+	cd /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build && $(MAKE) $(MAKESILENT) -f recognition/classifier/CMakeFiles/classifier.dir/build.make recognition/classifier/CMakeFiles/classifier.dir/classifier.cpp.s
+.PHONY : classifier.cpp.s
 
 # Help Target
 help:
@@ -211,10 +211,10 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... classifer"
-	@echo "... classifer.o"
-	@echo "... classifer.i"
-	@echo "... classifer.s"
+	@echo "... classifier"
+	@echo "... classifier.o"
+	@echo "... classifier.i"
+	@echo "... classifier.s"
 .PHONY : help
 
 

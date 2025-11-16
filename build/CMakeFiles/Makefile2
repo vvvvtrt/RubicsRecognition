@@ -117,11 +117,11 @@ recognition/clean: recognition/src/clean
 # Directory level rules for directory recognition/classifier
 
 # Recursive "all" directory target.
-recognition/classifier/all: recognition/classifier/CMakeFiles/classifer.dir/all
+recognition/classifier/all: recognition/classifier/CMakeFiles/classifier.dir/all
 .PHONY : recognition/classifier/all
 
 # Recursive "codegen" directory target.
-recognition/classifier/codegen: recognition/classifier/CMakeFiles/classifer.dir/codegen
+recognition/classifier/codegen: recognition/classifier/CMakeFiles/classifier.dir/codegen
 .PHONY : recognition/classifier/codegen
 
 # Recursive "preinstall" directory target.
@@ -129,7 +129,7 @@ recognition/classifier/preinstall:
 .PHONY : recognition/classifier/preinstall
 
 # Recursive "clean" directory target.
-recognition/classifier/clean: recognition/classifier/CMakeFiles/classifer.dir/clean
+recognition/classifier/clean: recognition/classifier/CMakeFiles/classifier.dir/clean
 .PHONY : recognition/classifier/clean
 
 #=============================================================================
@@ -273,36 +273,36 @@ recognition/preprocessor/CMakeFiles/preprocessor.dir/clean:
 .PHONY : recognition/preprocessor/CMakeFiles/preprocessor.dir/clean
 
 #=============================================================================
-# Target rules for target recognition/classifier/CMakeFiles/classifer.dir
+# Target rules for target recognition/classifier/CMakeFiles/classifier.dir
 
 # All Build rule for target.
-recognition/classifier/CMakeFiles/classifer.dir/all:
-	$(MAKE) $(MAKESILENT) -f recognition/classifier/CMakeFiles/classifer.dir/build.make recognition/classifier/CMakeFiles/classifer.dir/depend
-	$(MAKE) $(MAKESILENT) -f recognition/classifier/CMakeFiles/classifer.dir/build.make recognition/classifier/CMakeFiles/classifer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles --progress-num=3,4 "Built target classifer"
-.PHONY : recognition/classifier/CMakeFiles/classifer.dir/all
+recognition/classifier/CMakeFiles/classifier.dir/all:
+	$(MAKE) $(MAKESILENT) -f recognition/classifier/CMakeFiles/classifier.dir/build.make recognition/classifier/CMakeFiles/classifier.dir/depend
+	$(MAKE) $(MAKESILENT) -f recognition/classifier/CMakeFiles/classifier.dir/build.make recognition/classifier/CMakeFiles/classifier.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles --progress-num=3,4 "Built target classifier"
+.PHONY : recognition/classifier/CMakeFiles/classifier.dir/all
 
 # Build rule for subdir invocation for target.
-recognition/classifier/CMakeFiles/classifer.dir/rule: cmake_check_build_system
+recognition/classifier/CMakeFiles/classifier.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 recognition/classifier/CMakeFiles/classifer.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 recognition/classifier/CMakeFiles/classifier.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles 0
-.PHONY : recognition/classifier/CMakeFiles/classifer.dir/rule
+.PHONY : recognition/classifier/CMakeFiles/classifier.dir/rule
 
 # Convenience name for target.
-classifer: recognition/classifier/CMakeFiles/classifer.dir/rule
-.PHONY : classifer
+classifier: recognition/classifier/CMakeFiles/classifier.dir/rule
+.PHONY : classifier
 
 # codegen rule for target.
-recognition/classifier/CMakeFiles/classifer.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f recognition/classifier/CMakeFiles/classifer.dir/build.make recognition/classifier/CMakeFiles/classifer.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles --progress-num=3,4 "Finished codegen for target classifer"
-.PHONY : recognition/classifier/CMakeFiles/classifer.dir/codegen
+recognition/classifier/CMakeFiles/classifier.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f recognition/classifier/CMakeFiles/classifier.dir/build.make recognition/classifier/CMakeFiles/classifier.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles --progress-num=3,4 "Finished codegen for target classifier"
+.PHONY : recognition/classifier/CMakeFiles/classifier.dir/codegen
 
 # clean rule for target.
-recognition/classifier/CMakeFiles/classifer.dir/clean:
-	$(MAKE) $(MAKESILENT) -f recognition/classifier/CMakeFiles/classifer.dir/build.make recognition/classifier/CMakeFiles/classifer.dir/clean
-.PHONY : recognition/classifier/CMakeFiles/classifer.dir/clean
+recognition/classifier/CMakeFiles/classifier.dir/clean:
+	$(MAKE) $(MAKESILENT) -f recognition/classifier/CMakeFiles/classifier.dir/build.make recognition/classifier/CMakeFiles/classifier.dir/clean
+.PHONY : recognition/classifier/CMakeFiles/classifier.dir/clean
 
 #=============================================================================
 # Target rules for target recognition/include/CMakeFiles/recognition.dir
@@ -342,7 +342,7 @@ recognition/include/CMakeFiles/recognition.dir/clean:
 # All Build rule for target.
 recognition/src/CMakeFiles/RubiksCubeApp.dir/all: recognition/detector/CMakeFiles/detector.dir/all
 recognition/src/CMakeFiles/RubiksCubeApp.dir/all: recognition/preprocessor/CMakeFiles/preprocessor.dir/all
-recognition/src/CMakeFiles/RubiksCubeApp.dir/all: recognition/classifier/CMakeFiles/classifer.dir/all
+recognition/src/CMakeFiles/RubiksCubeApp.dir/all: recognition/classifier/CMakeFiles/classifier.dir/all
 	$(MAKE) $(MAKESILENT) -f recognition/src/CMakeFiles/RubiksCubeApp.dir/build.make recognition/src/CMakeFiles/RubiksCubeApp.dir/depend
 	$(MAKE) $(MAKESILENT) -f recognition/src/CMakeFiles/RubiksCubeApp.dir/build.make recognition/src/CMakeFiles/RubiksCubeApp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles --progress-num=1,2 "Built target RubiksCubeApp"

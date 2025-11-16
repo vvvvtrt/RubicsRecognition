@@ -923,4 +923,5 @@ recognition/src/CMakeFiles/RubiksCubeApp.dir/main.cpp.o: \
   /opt/homebrew/Cellar/opencv/4.12.0_14/include/opencv4/opencv2/video/background_segm.hpp \
   /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/src/../preprocessor/preprocessor.hpp \
   /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/src/../detector/detector.hpp \
-  /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/src/../utils/circut.hpp
+  /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/src/../utils/circut.hpp \
+  /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/src/../classifier/classifier.hpp

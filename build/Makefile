@@ -188,17 +188,17 @@ preprocessor/fast:
 .PHONY : preprocessor/fast
 
 #=============================================================================
-# Target rules for targets named classifer
+# Target rules for targets named classifier
 
 # Build rule for target.
-classifer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 classifer
-.PHONY : classifer
+classifier: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 classifier
+.PHONY : classifier
 
 # fast build rule for target.
-classifer/fast:
-	$(MAKE) $(MAKESILENT) -f recognition/classifier/CMakeFiles/classifer.dir/build.make recognition/classifier/CMakeFiles/classifer.dir/build
-.PHONY : classifer/fast
+classifier/fast:
+	$(MAKE) $(MAKESILENT) -f recognition/classifier/CMakeFiles/classifier.dir/build.make recognition/classifier/CMakeFiles/classifier.dir/build
+.PHONY : classifier/fast
 
 #=============================================================================
 # Target rules for targets named recognition
@@ -239,7 +239,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... RubiksCubeApp"
-	@echo "... classifer"
+	@echo "... classifier"
 	@echo "... detector"
 	@echo "... preprocessor"
 	@echo "... recognition"

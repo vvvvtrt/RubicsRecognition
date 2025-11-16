@@ -97,7 +97,7 @@ recognition/src/RubiksCubeApp: recognition/src/CMakeFiles/RubiksCubeApp.dir/main
 recognition/src/RubiksCubeApp: recognition/src/CMakeFiles/RubiksCubeApp.dir/build.make
 recognition/src/RubiksCubeApp: recognition/detector/libdetector.a
 recognition/src/RubiksCubeApp: recognition/preprocessor/libpreprocessor.a
-recognition/src/RubiksCubeApp: recognition/classifier/libclassifer.a
+recognition/src/RubiksCubeApp: recognition/classifier/libclassifier.a
 recognition/src/RubiksCubeApp: /opt/homebrew/lib/libopencv_gapi.4.12.0.dylib
 recognition/src/RubiksCubeApp: /opt/homebrew/lib/libopencv_stitching.4.12.0.dylib
 recognition/src/RubiksCubeApp: /opt/homebrew/lib/libopencv_alphamat.4.12.0.dylib

@@ -813,6 +813,7 @@ recognition/src/CMakeFiles/RubiksCubeApp.dir/main.cpp.o: /Users/mikhail/Document
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
+  /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/classifier/classifier.hpp \
   /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/detector/detector.hpp \
   /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/preprocessor/preprocessor.hpp \
   /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/utils/circut.hpp \
@@ -1069,6 +1070,8 @@ recognition/src/CMakeFiles/RubiksCubeApp.dir/main.cpp.o: /Users/mikhail/Document
 /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/utils/circut.hpp:
 
 /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/preprocessor/preprocessor.hpp:
+
+/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/classifier/classifier.hpp:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h:
 

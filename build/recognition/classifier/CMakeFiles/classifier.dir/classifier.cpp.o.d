@@ -1,6 +1,6 @@
-recognition/classifier/CMakeFiles/classifer.dir/classifer.cpp.o: \
-  /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/classifier/classifer.cpp \
-  /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/classifier/classifer.hpp \
+recognition/classifier/CMakeFiles/classifier.dir/classifier.cpp.o: \
+  /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/classifier/classifier.cpp \
+  /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/classifier/classifier.hpp \
   /opt/homebrew/Cellar/opencv/4.12.0_14/include/opencv4/opencv2/opencv.hpp \
   /opt/homebrew/Cellar/opencv/4.12.0_14/include/opencv4/opencv2/opencv_modules.hpp \
   /opt/homebrew/Cellar/opencv/4.12.0_14/include/opencv4/opencv2/core.hpp \

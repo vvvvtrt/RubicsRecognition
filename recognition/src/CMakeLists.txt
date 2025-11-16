@@ -13,7 +13,7 @@ target_link_libraries(RubiksCubeApp
     PRIVATE 
     detector            
     preprocessor
-    classifer
+    classifier
     ${OpenCV_LIBS}
 )
 

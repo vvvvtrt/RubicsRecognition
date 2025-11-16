@@ -76,7 +76,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "recognition/detector/CMakeFiles/detector.dir/DependInfo.cmake"
   "recognition/preprocessor/CMakeFiles/preprocessor.dir/DependInfo.cmake"
-  "recognition/classifier/CMakeFiles/classifer.dir/DependInfo.cmake"
+  "recognition/classifier/CMakeFiles/classifier.dir/DependInfo.cmake"
   "recognition/include/CMakeFiles/recognition.dir/DependInfo.cmake"
   "recognition/src/CMakeFiles/RubiksCubeApp.dir/DependInfo.cmake"
   )
