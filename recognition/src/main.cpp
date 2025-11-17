@@ -143,6 +143,22 @@ int main() {
         bool haveAllColors = false;
 
         if (selected.size() == 9) {
+            std::sort(selected.begin(), selected.end(),
+                [](const Circuit& a, const Circuit& b) {
+
+                    int ay = (a.start.y + a.end.y) / 2;
+                    int by = (b.start.y + b.end.y) / 2;
+
+                    if (std::abs(ay - by) < 20) {
+                        int ax = (a.start.x + a.end.x) / 2;
+                        int bx = (b.start.x + b.end.x) / 2;
+                        return ax < bx;
+                    }
+
+                    return ay < by;
+                }
+            );
+
             for (const Circuit& c : selected) {
                 cv::Point tl = c.start;
                 cv::Point br = c.end;
@@ -197,8 +213,8 @@ int main() {
                 cv::Scalar(255, 255, 255),
                 2);
             
-            // BGR значения оригинального среднего цвета
-            std::string bgrText = cv::format("Orig: B:%d G:%d R:%d", 
+
+            /*std::string bgrText = cv::format("Orig: B:%d G:%d R:%d", 
                 originalColor[0], originalColor[1], originalColor[2]);
             cv::putText(frame,
                 bgrText,
@@ -207,8 +223,7 @@ int main() {
                 0.35,
                 cv::Scalar(200, 200, 200),
                 1);
-            
-            // BGR значения кластеризованного цвета
+
             std::string clusterText = cv::format("Clust: B:%d G:%d R:%d", 
                 color[0], color[1], color[2]);
             cv::putText(frame,
@@ -217,13 +232,46 @@ int main() {
                 cv::FONT_HERSHEY_SIMPLEX,
                 0.35,
                 cv::Scalar(255, 255, 0),
-                1);
+                1);*/
         }
         
         
         cv::imshow("Processed", processed);
         cv::imshow("Detections", frame);
         
+        if (haveAllColors) {
+            std::cout << "Saved colors (y/n):  ";
+            std::string input;
+            std::cin >> input;
+
+            if (input == "y" || input == "Y") {
+                saveColors.push_back(clusteredColors);
+                std::cout << "Colors saved. Total saved sets: " << saveColors.size() << std::endl;
+            }
+        }
+
+        if (!saveColors.empty()) {
+            int cellSize = 100;
+            cv::Mat cubeFace(3 * cellSize, 3 * cellSize, CV_8UC3, cv::Scalar(0,0,0));
+
+            const auto& face = saveColors.back();
+
+            for (int i = 0; i < 9; i++) {
+                int row = i / 3;
+                int col = i % 3;
+
+                cv::Rect r(col * cellSize, row * cellSize, cellSize, cellSize);
+
+                cv::rectangle(cubeFace, r, 
+                    cv::Scalar(face[i][0], face[i][1], face[i][2]), 
+                    cv::FILLED);
+
+                cv::rectangle(cubeFace, r, cv::Scalar(0,0,0), 2);
+            }
+
+            cv::imshow("Last Saved Cube Side", cubeFace);
+        }
+
         if (cv::waitKey(30) == 27) {
             break;
         }
