@@ -6,6 +6,7 @@
 
 
 struct Circuit {
+    Circuit() = default;
 	Circuit(int ar, cv::Point st, cv::Point en) : area(ar), start(st), end(en) {}
 	~Circuit() = default;
 
@@ -14,11 +15,7 @@ struct Circuit {
 	cv::Point end;
 };
 
-struct Color
-{
-    int class_color;
-    cv::Scalar color_value;
-};
+
 
 
 #endif // UTILS_HPP
