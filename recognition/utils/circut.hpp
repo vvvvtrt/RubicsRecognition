@@ -17,5 +17,4 @@ struct Circuit {
 
 
 
-
 #endif // UTILS_HPP

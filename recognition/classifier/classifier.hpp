@@ -7,12 +7,12 @@
 
 class Classifier {
 public:
-    virtual std::vector<cv::Vec3b>classifierColors(const std::vector<cv::Mat>& squareImages, int k) = 0;
+    virtual std::vector<cv::Vec3b>classifierColors(const std::vector<cv::Vec3b>& meanColors, int k) = 0;
 };
 
 class KMeansClassifier : public Classifier {
 public:
-    std::vector<cv::Vec3b> classifierColors(const std::vector<cv::Mat>& squareImages, int k) override;
+    std::vector<cv::Vec3b> classifierColors(const std::vector<cv::Vec3b>& meanColors, int k) override;
 };
 
 #endif // CLASSIFER_HPP
