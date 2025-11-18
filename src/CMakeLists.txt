@@ -14,6 +14,7 @@ target_link_libraries(RubiksCubeApp
     detector            
     preprocessor
     classifier
+    recognition
     ${OpenCV_LIBS}
 )
 

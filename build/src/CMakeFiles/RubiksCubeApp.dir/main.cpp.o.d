@@ -921,7 +921,8 @@ src/CMakeFiles/RubiksCubeApp.dir/main.cpp.o: \
   /opt/homebrew/Cellar/opencv/4.12.0_14/include/opencv4/opencv2/video.hpp \
   /opt/homebrew/Cellar/opencv/4.12.0_14/include/opencv4/opencv2/video/tracking.hpp \
   /opt/homebrew/Cellar/opencv/4.12.0_14/include/opencv4/opencv2/video/background_segm.hpp \
-  /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/detector/../preprocessor/preprocessor.hpp \
-  /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/detector/../detector/detector.hpp \
+  /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/include/recognition.hpp \
+  /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/detector/../classifier/classifier.hpp \
   /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/detector/../utils/circut.hpp \
-  /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/detector/../classifier/classifier.hpp
+  /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/detector/../detector/detector.hpp \
+  /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/detector/../preprocessor/preprocessor.hpp

@@ -817,6 +817,7 @@ src/CMakeFiles/RubiksCubeApp.dir/main.cpp.o: /Users/mikhail/Documents/CppProject
   /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/detector/detector.hpp \
   /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/preprocessor/preprocessor.hpp \
   /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/utils/circut.hpp \
+  /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/include/recognition.hpp \
   /opt/homebrew/Cellar/opencv/4.12.0_14/include/opencv4/opencv2/imgproc/segmentation.hpp \
   /opt/homebrew/Cellar/opencv/4.12.0_14/include/opencv4/opencv2/calib3d.hpp \
   /opt/homebrew/Cellar/opencv/4.12.0_14/include/opencv4/opencv2/core.hpp \
@@ -1066,6 +1067,8 @@ src/CMakeFiles/RubiksCubeApp.dir/main.cpp.o: /Users/mikhail/Documents/CppProject
 /opt/homebrew/Cellar/opencv/4.12.0_14/include/opencv4/opencv2/core/affine.hpp:
 
 /opt/homebrew/Cellar/opencv/4.12.0_14/include/opencv4/opencv2/core.hpp:
+
+/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/include/recognition.hpp:
 
 /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/utils/circut.hpp:
 

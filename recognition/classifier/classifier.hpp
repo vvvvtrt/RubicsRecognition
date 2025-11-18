@@ -18,4 +18,6 @@ public:
 
 std::string getColorName(const cv::Vec3b& color);
 
+
+
 #endif // CLASSIFER_HPP

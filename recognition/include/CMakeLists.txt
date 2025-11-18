@@ -1,8 +1,16 @@
-add_library(recognition recognition.cpp recognition.hpp)
-set_property(TARGET recognition PROPERTY CXX_STANDARD 20)
-target_include_directories(recognition PUBLIC
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/..>
-  $<INSTALL_INTERFACE:include>
+add_library(recognition
+    recognition.cpp
+    recognition.hpp
 )
-include_directories(${OpenCV_INCLUDE_DIRS})
+
+# Добавляем текущую директорию в include path
+target_include_directories(recognition PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}
+)
+
+target_link_libraries(recognition
+    PUBLIC classifier detector preprocessor ${OpenCV_LIBS}
+)
+
+set_property(TARGET recognition PROPERTY CXX_STANDARD 20)
 install(TARGETS recognition)

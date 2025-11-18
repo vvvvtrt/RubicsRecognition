@@ -98,6 +98,7 @@ src/RubiksCubeApp: src/CMakeFiles/RubiksCubeApp.dir/build.make
 src/RubiksCubeApp: recognition/detector/libdetector.a
 src/RubiksCubeApp: recognition/preprocessor/libpreprocessor.a
 src/RubiksCubeApp: recognition/classifier/libclassifier.a
+src/RubiksCubeApp: recognition/include/librecognition.a
 src/RubiksCubeApp: /opt/homebrew/lib/libopencv_gapi.4.12.0.dylib
 src/RubiksCubeApp: /opt/homebrew/lib/libopencv_stitching.4.12.0.dylib
 src/RubiksCubeApp: /opt/homebrew/lib/libopencv_alphamat.4.12.0.dylib
@@ -134,17 +135,17 @@ src/RubiksCubeApp: /opt/homebrew/lib/libopencv_wechat_qrcode.4.12.0.dylib
 src/RubiksCubeApp: /opt/homebrew/lib/libopencv_xfeatures2d.4.12.0.dylib
 src/RubiksCubeApp: /opt/homebrew/lib/libopencv_xobjdetect.4.12.0.dylib
 src/RubiksCubeApp: /opt/homebrew/lib/libopencv_xphoto.4.12.0.dylib
-src/RubiksCubeApp: /opt/homebrew/lib/libopencv_shape.4.12.0.dylib
+src/RubiksCubeApp: /opt/homebrew/lib/libopencv_phase_unwrapping.4.12.0.dylib
+src/RubiksCubeApp: /opt/homebrew/lib/libopencv_optflow.4.12.0.dylib
 src/RubiksCubeApp: /opt/homebrew/lib/libopencv_highgui.4.12.0.dylib
 src/RubiksCubeApp: /opt/homebrew/lib/libopencv_datasets.4.12.0.dylib
 src/RubiksCubeApp: /opt/homebrew/lib/libopencv_plot.4.12.0.dylib
 src/RubiksCubeApp: /opt/homebrew/lib/libopencv_text.4.12.0.dylib
+src/RubiksCubeApp: /opt/homebrew/lib/libopencv_videoio.4.12.0.dylib
 src/RubiksCubeApp: /opt/homebrew/lib/libopencv_ml.4.12.0.dylib
-src/RubiksCubeApp: /opt/homebrew/lib/libopencv_phase_unwrapping.4.12.0.dylib
-src/RubiksCubeApp: /opt/homebrew/lib/libopencv_optflow.4.12.0.dylib
+src/RubiksCubeApp: /opt/homebrew/lib/libopencv_shape.4.12.0.dylib
 src/RubiksCubeApp: /opt/homebrew/lib/libopencv_ximgproc.4.12.0.dylib
 src/RubiksCubeApp: /opt/homebrew/lib/libopencv_video.4.12.0.dylib
-src/RubiksCubeApp: /opt/homebrew/lib/libopencv_videoio.4.12.0.dylib
 src/RubiksCubeApp: /opt/homebrew/lib/libopencv_imgcodecs.4.12.0.dylib
 src/RubiksCubeApp: /opt/homebrew/lib/libopencv_objdetect.4.12.0.dylib
 src/RubiksCubeApp: /opt/homebrew/lib/libopencv_calib3d.4.12.0.dylib
@@ -154,6 +155,9 @@ src/RubiksCubeApp: /opt/homebrew/lib/libopencv_flann.4.12.0.dylib
 src/RubiksCubeApp: /opt/homebrew/lib/libopencv_photo.4.12.0.dylib
 src/RubiksCubeApp: /opt/homebrew/lib/libopencv_imgproc.4.12.0.dylib
 src/RubiksCubeApp: /opt/homebrew/lib/libopencv_core.4.12.0.dylib
+src/RubiksCubeApp: recognition/detector/libdetector.a
+src/RubiksCubeApp: recognition/preprocessor/libpreprocessor.a
+src/RubiksCubeApp: recognition/classifier/libclassifier.a
 src/RubiksCubeApp: src/CMakeFiles/RubiksCubeApp.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable RubiksCubeApp"
 	cd /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RubiksCubeApp.dir/link.txt --verbose=$(VERBOSE)

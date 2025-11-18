@@ -1,13 +1,12 @@
 #include <opencv2/opencv.hpp>
-#include <preprocessor/preprocessor.hpp>
+/*#include <preprocessor/preprocessor.hpp>
 #include <detector/detector.hpp>
 #include <classifier/classifier.hpp>
-#include <utils/circut.hpp>
+#include <utils/circut.hpp>*/
 #include <map>
 #include <algorithm>
 #include <string>
-
-
+#include "recognition.hpp"
 
 
 int main() {
@@ -21,9 +20,9 @@ int main() {
     cap.set(cv::CAP_PROP_FRAME_HEIGHT, 720);
     cap.set(cv::CAP_PROP_AUTO_EXPOSURE, 0.25);
     
-    DilateProcessor preprocessor;   
-    ContourDetector detector;
-    SquareSearcher9 searcher;
+    recognition::DilateProcessor preprocessor;   
+    recognition::ContourDetector detector;
+    recognition::SquareSearcher9 searcher;
     
     std::vector<std::vector<cv::Vec3b>> saveColors;
 
@@ -33,13 +32,13 @@ int main() {
         if (frame.empty()) continue;
         
         cv::Mat processed = preprocessor.process(frame);
-        std::vector<Circuit> circuits = detector.detect(processed);
-        Circuit cubeBox;
+        std::vector<recognition::Circuit> circuits = detector.detect(processed);
+        recognition::Circuit cubeBox;
         bool cubeDetected = false;
         
         if (!circuits.empty()) {
             auto maxIt = std::max_element(circuits.begin(), circuits.end(),
-                [](const Circuit& a, const Circuit& b) { return a.area < b.area; });
+                [](const recognition::Circuit& a, const recognition::Circuit& b) { return a.area < b.area; });
             cubeBox = *maxIt;
             cubeDetected = true;
             
@@ -54,7 +53,7 @@ int main() {
         std::vector<Circuit> selected;
         
         if (cubeDetected) {
-            std::vector<Circuit> insideCube;
+            std::vector<recognition::Circuit> insideCube;
             int margin = 20; 
             
             for (const Circuit& c : circuits) {
@@ -83,7 +82,7 @@ int main() {
 
         if (selected.size() == 9) {
             std::sort(selected.begin(), selected.end(),
-                [](const Circuit& a, const Circuit& b) {
+                [](const recognition::Circuit& a, const recognition::Circuit& b) {
 
                     int ay = (a.start.y + a.end.y) / 2;
                     int by = (b.start.y + b.end.y) / 2;
@@ -98,7 +97,7 @@ int main() {
                 }
             );
 
-            for (const Circuit& c : selected) {
+            for (const recognition::Circuit& c : selected) {
                 cv::Point tl = c.start;
                 cv::Point br = c.end;
                 
@@ -121,7 +120,7 @@ int main() {
         }
         
         //std::vector<cv::Vec3b> clusteredColors = meanColors;
-        KMeansClassifier classifier;
+        recognition::KMeansClassifier classifier;
         std::vector<cv::Vec3b> clusteredColors = classifier.classifierColors(meanColors, 6);
         
         for (size_t i = 0; i < selected.size(); i++) {

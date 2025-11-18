@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/include/.. -I/opt/homebrew/Cellar/opencv/4.12.0_14/include/opencv4
+CXX_INCLUDES = -I/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/include -I/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/classifier/.. -I/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/detector/.. -I/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/preprocessor/.. -isystem /opt/homebrew/Cellar/opencv/4.12.0_14/include/opencv4
 
 CXX_FLAGSarm64 = -std=gnu++20 -arch arm64
 
