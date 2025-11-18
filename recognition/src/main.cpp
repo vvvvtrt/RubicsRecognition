@@ -8,68 +8,7 @@
 #include <string>
 
 
-struct RubikColor {
-    std::string name;
-    cv::Vec3b bgr;
-};
 
-std::vector<RubikColor> RUBIK_COLORS = {
-    {"White",  cv::Vec3b(240, 240, 240)},
-    {"Yellow", cv::Vec3b(30, 220, 220)},
-    {"Green",  cv::Vec3b(50, 180, 50)},
-    {"Blue",   cv::Vec3b(180, 80, 30)},
-    {"Red",    cv::Vec3b(30, 30, 200)},
-    {"Orange", cv::Vec3b(20, 100, 240)}
-};
-
-
-std::string getColorName(const cv::Vec3b& color) {
-    double min_dist = std::numeric_limits<double>::max();
-    std::string result = "Unknown";
-    
-    for (const auto& rubik : RUBIK_COLORS) {
-        double dist = std::sqrt(
-            std::pow(color[0] - rubik.bgr[0], 2) +
-            std::pow(color[1] - rubik.bgr[1], 2) +
-            std::pow(color[2] - rubik.bgr[2], 2)
-        );
-        
-        if (dist < min_dist) {
-            min_dist = dist;
-            result = rubik.name;
-        }
-    }
-    
-    return result;
-}
-
-
-cv::Vec3b getMeanColor(const cv::Mat& square) {
-    if (square.empty()) {
-        return cv::Vec3b(0, 0, 0);
-    }
-    
-    int margin = square.rows / 4;
-    cv::Rect centerROI(margin, margin, 
-                       square.cols - 2*margin, 
-                       square.rows - 2*margin);
-    
-    if (centerROI.width <= 0 || centerROI.height <= 0) {
-        centerROI = cv::Rect(0, 0, square.cols, square.rows);
-    }
-    
-    cv::Mat center = square(centerROI);
-    
-    cv::Scalar meanScalar = cv::mean(center);
-    
-    cv::Vec3b meanColor(
-        static_cast<uchar>(std::round(meanScalar[0])),
-        static_cast<uchar>(std::round(meanScalar[1])),
-        static_cast<uchar>(std::round(meanScalar[2]))
-    );
-    
-    return meanColor;
-}
 
 int main() {
     cv::VideoCapture cap(0);
@@ -104,12 +43,12 @@ int main() {
             cubeBox = *maxIt;
             cubeDetected = true;
             
-            cv::rectangle(frame, cubeBox.start, cubeBox.end, 
+            /*cv::rectangle(frame, cubeBox.start, cubeBox.end, 
                 cv::Scalar(255, 0, 255), 2);
             cv::putText(frame, "Rubik Cube",
                 cv::Point(cubeBox.start.x, cubeBox.start.y - 10),
                 cv::FONT_HERSHEY_SIMPLEX, 0.7,
-                cv::Scalar(255, 0, 255), 2);
+                cv::Scalar(255, 0, 255), 2);*/
         }
         
         std::vector<Circuit> selected;

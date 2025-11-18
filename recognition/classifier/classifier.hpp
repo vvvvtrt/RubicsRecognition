@@ -15,4 +15,7 @@ public:
     std::vector<cv::Vec3b> classifierColors(const std::vector<cv::Vec3b>& meanColors, int k) override;
 };
 
+
+std::string getColorName(const cv::Vec3b& color);
+
 #endif // CLASSIFER_HPP

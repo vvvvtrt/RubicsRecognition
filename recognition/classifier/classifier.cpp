@@ -39,3 +39,25 @@ std::vector<cv::Vec3b> KMeansClassifier::classifierColors(
 
     return clusteredColors;
 }
+
+
+
+std::string getColorName(const cv::Vec3b& color){
+    double min_dist = std::numeric_limits<double>::max();
+    std::string result = "Unknown";
+    
+    for (const auto& rubik : RUBIK_COLORS) {
+        double dist = std::sqrt(
+            std::pow(color[0] - rubik.bgr[0], 2) +
+            std::pow(color[1] - rubik.bgr[1], 2) +
+            std::pow(color[2] - rubik.bgr[2], 2)
+        );
+        
+        if (dist < min_dist) {
+            min_dist = dist;
+            result = rubik.name;
+        }
+    }
+    
+    return result;
+}

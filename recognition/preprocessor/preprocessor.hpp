@@ -29,4 +29,31 @@ public:
 };
 
 
+cv::Vec3b getMeanColor(const cv::Mat& square) {
+    if (square.empty()) {
+        return cv::Vec3b(0, 0, 0);
+    }
+    
+    int margin = square.rows / 4;
+    cv::Rect centerROI(margin, margin, 
+                       square.cols - 2*margin, 
+                       square.rows - 2*margin);
+    
+    if (centerROI.width <= 0 || centerROI.height <= 0) {
+        centerROI = cv::Rect(0, 0, square.cols, square.rows);
+    }
+    
+    cv::Mat center = square(centerROI);
+    
+    cv::Scalar meanScalar = cv::mean(center);
+    
+    cv::Vec3b meanColor(
+        static_cast<uchar>(std::round(meanScalar[0])),
+        static_cast<uchar>(std::round(meanScalar[1])),
+        static_cast<uchar>(std::round(meanScalar[2]))
+    );
+    
+    return meanColor;
+}
+
 #endif // PREROPCESSOR_HPP
