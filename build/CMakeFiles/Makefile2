@@ -64,18 +64,22 @@ CMAKE_BINARY_DIR = /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/bu
 
 # The main recursive "all" target.
 all: recognition/all
+all: src/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: recognition/codegen
+codegen: src/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
 preinstall: recognition/preinstall
+preinstall: src/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: recognition/clean
+clean: src/clean
 .PHONY : clean
 
 #=============================================================================
@@ -86,7 +90,6 @@ recognition/all: recognition/detector/all
 recognition/all: recognition/preprocessor/all
 recognition/all: recognition/classifier/all
 recognition/all: recognition/include/all
-recognition/all: recognition/src/all
 .PHONY : recognition/all
 
 # Recursive "codegen" directory target.
@@ -94,7 +97,6 @@ recognition/codegen: recognition/detector/codegen
 recognition/codegen: recognition/preprocessor/codegen
 recognition/codegen: recognition/classifier/codegen
 recognition/codegen: recognition/include/codegen
-recognition/codegen: recognition/src/codegen
 .PHONY : recognition/codegen
 
 # Recursive "preinstall" directory target.
@@ -102,7 +104,6 @@ recognition/preinstall: recognition/detector/preinstall
 recognition/preinstall: recognition/preprocessor/preinstall
 recognition/preinstall: recognition/classifier/preinstall
 recognition/preinstall: recognition/include/preinstall
-recognition/preinstall: recognition/src/preinstall
 .PHONY : recognition/preinstall
 
 # Recursive "clean" directory target.
@@ -110,7 +111,6 @@ recognition/clean: recognition/detector/clean
 recognition/clean: recognition/preprocessor/clean
 recognition/clean: recognition/classifier/clean
 recognition/clean: recognition/include/clean
-recognition/clean: recognition/src/clean
 .PHONY : recognition/clean
 
 #=============================================================================
@@ -190,23 +190,23 @@ recognition/preprocessor/clean: recognition/preprocessor/CMakeFiles/preprocessor
 .PHONY : recognition/preprocessor/clean
 
 #=============================================================================
-# Directory level rules for directory recognition/src
+# Directory level rules for directory src
 
 # Recursive "all" directory target.
-recognition/src/all: recognition/src/CMakeFiles/RubiksCubeApp.dir/all
-.PHONY : recognition/src/all
+src/all: src/CMakeFiles/RubiksCubeApp.dir/all
+.PHONY : src/all
 
 # Recursive "codegen" directory target.
-recognition/src/codegen: recognition/src/CMakeFiles/RubiksCubeApp.dir/codegen
-.PHONY : recognition/src/codegen
+src/codegen: src/CMakeFiles/RubiksCubeApp.dir/codegen
+.PHONY : src/codegen
 
 # Recursive "preinstall" directory target.
-recognition/src/preinstall:
-.PHONY : recognition/src/preinstall
+src/preinstall:
+.PHONY : src/preinstall
 
 # Recursive "clean" directory target.
-recognition/src/clean: recognition/src/CMakeFiles/RubiksCubeApp.dir/clean
-.PHONY : recognition/src/clean
+src/clean: src/CMakeFiles/RubiksCubeApp.dir/clean
+.PHONY : src/clean
 
 #=============================================================================
 # Target rules for target recognition/detector/CMakeFiles/detector.dir
@@ -337,38 +337,38 @@ recognition/include/CMakeFiles/recognition.dir/clean:
 .PHONY : recognition/include/CMakeFiles/recognition.dir/clean
 
 #=============================================================================
-# Target rules for target recognition/src/CMakeFiles/RubiksCubeApp.dir
+# Target rules for target src/CMakeFiles/RubiksCubeApp.dir
 
 # All Build rule for target.
-recognition/src/CMakeFiles/RubiksCubeApp.dir/all: recognition/detector/CMakeFiles/detector.dir/all
-recognition/src/CMakeFiles/RubiksCubeApp.dir/all: recognition/preprocessor/CMakeFiles/preprocessor.dir/all
-recognition/src/CMakeFiles/RubiksCubeApp.dir/all: recognition/classifier/CMakeFiles/classifier.dir/all
-	$(MAKE) $(MAKESILENT) -f recognition/src/CMakeFiles/RubiksCubeApp.dir/build.make recognition/src/CMakeFiles/RubiksCubeApp.dir/depend
-	$(MAKE) $(MAKESILENT) -f recognition/src/CMakeFiles/RubiksCubeApp.dir/build.make recognition/src/CMakeFiles/RubiksCubeApp.dir/build
+src/CMakeFiles/RubiksCubeApp.dir/all: recognition/detector/CMakeFiles/detector.dir/all
+src/CMakeFiles/RubiksCubeApp.dir/all: recognition/preprocessor/CMakeFiles/preprocessor.dir/all
+src/CMakeFiles/RubiksCubeApp.dir/all: recognition/classifier/CMakeFiles/classifier.dir/all
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/RubiksCubeApp.dir/build.make src/CMakeFiles/RubiksCubeApp.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/RubiksCubeApp.dir/build.make src/CMakeFiles/RubiksCubeApp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles --progress-num=1,2 "Built target RubiksCubeApp"
-.PHONY : recognition/src/CMakeFiles/RubiksCubeApp.dir/all
+.PHONY : src/CMakeFiles/RubiksCubeApp.dir/all
 
 # Build rule for subdir invocation for target.
-recognition/src/CMakeFiles/RubiksCubeApp.dir/rule: cmake_check_build_system
+src/CMakeFiles/RubiksCubeApp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles 8
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 recognition/src/CMakeFiles/RubiksCubeApp.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/RubiksCubeApp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles 0
-.PHONY : recognition/src/CMakeFiles/RubiksCubeApp.dir/rule
+.PHONY : src/CMakeFiles/RubiksCubeApp.dir/rule
 
 # Convenience name for target.
-RubiksCubeApp: recognition/src/CMakeFiles/RubiksCubeApp.dir/rule
+RubiksCubeApp: src/CMakeFiles/RubiksCubeApp.dir/rule
 .PHONY : RubiksCubeApp
 
 # codegen rule for target.
-recognition/src/CMakeFiles/RubiksCubeApp.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f recognition/src/CMakeFiles/RubiksCubeApp.dir/build.make recognition/src/CMakeFiles/RubiksCubeApp.dir/codegen
+src/CMakeFiles/RubiksCubeApp.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/RubiksCubeApp.dir/build.make src/CMakeFiles/RubiksCubeApp.dir/codegen
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles --progress-num=1,2 "Finished codegen for target RubiksCubeApp"
-.PHONY : recognition/src/CMakeFiles/RubiksCubeApp.dir/codegen
+.PHONY : src/CMakeFiles/RubiksCubeApp.dir/codegen
 
 # clean rule for target.
-recognition/src/CMakeFiles/RubiksCubeApp.dir/clean:
-	$(MAKE) $(MAKESILENT) -f recognition/src/CMakeFiles/RubiksCubeApp.dir/build.make recognition/src/CMakeFiles/RubiksCubeApp.dir/clean
-.PHONY : recognition/src/CMakeFiles/RubiksCubeApp.dir/clean
+src/CMakeFiles/RubiksCubeApp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/RubiksCubeApp.dir/build.make src/CMakeFiles/RubiksCubeApp.dir/clean
+.PHONY : src/CMakeFiles/RubiksCubeApp.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

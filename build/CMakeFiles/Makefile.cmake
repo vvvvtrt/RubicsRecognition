@@ -16,7 +16,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/detector/CMakeLists.txt"
   "/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/include/CMakeLists.txt"
   "/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/preprocessor/CMakeLists.txt"
-  "/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/src/CMakeLists.txt"
+  "/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/src/CMakeLists.txt"
   "/opt/homebrew/lib/cmake/opencv4/OpenCVConfig-version.cmake"
   "/opt/homebrew/lib/cmake/opencv4/OpenCVConfig.cmake"
   "/opt/homebrew/lib/cmake/opencv4/OpenCVModules-release.cmake"
@@ -69,7 +69,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "recognition/preprocessor/CMakeFiles/CMakeDirectoryInformation.cmake"
   "recognition/classifier/CMakeFiles/CMakeDirectoryInformation.cmake"
   "recognition/include/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "recognition/src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -78,5 +78,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "recognition/preprocessor/CMakeFiles/preprocessor.dir/DependInfo.cmake"
   "recognition/classifier/CMakeFiles/classifier.dir/DependInfo.cmake"
   "recognition/include/CMakeFiles/recognition.dir/DependInfo.cmake"
-  "recognition/src/CMakeFiles/RubiksCubeApp.dir/DependInfo.cmake"
+  "src/CMakeFiles/RubiksCubeApp.dir/DependInfo.cmake"
   )

@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/src//CMakeFiles/progress.marks
+	cd /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,83 +148,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named detector
+# Convenience name for target.
+src/CMakeFiles/RubiksCubeApp.dir/rule:
+	cd /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/RubiksCubeApp.dir/rule
+.PHONY : src/CMakeFiles/RubiksCubeApp.dir/rule
 
-# Build rule for target.
-detector: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 detector
-.PHONY : detector
-
-# fast build rule for target.
-detector/fast:
-	$(MAKE) $(MAKESILENT) -f recognition/detector/CMakeFiles/detector.dir/build.make recognition/detector/CMakeFiles/detector.dir/build
-.PHONY : detector/fast
-
-#=============================================================================
-# Target rules for targets named preprocessor
-
-# Build rule for target.
-preprocessor: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preprocessor
-.PHONY : preprocessor
-
-# fast build rule for target.
-preprocessor/fast:
-	$(MAKE) $(MAKESILENT) -f recognition/preprocessor/CMakeFiles/preprocessor.dir/build.make recognition/preprocessor/CMakeFiles/preprocessor.dir/build
-.PHONY : preprocessor/fast
-
-#=============================================================================
-# Target rules for targets named classifier
-
-# Build rule for target.
-classifier: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 classifier
-.PHONY : classifier
-
-# fast build rule for target.
-classifier/fast:
-	$(MAKE) $(MAKESILENT) -f recognition/classifier/CMakeFiles/classifier.dir/build.make recognition/classifier/CMakeFiles/classifier.dir/build
-.PHONY : classifier/fast
-
-#=============================================================================
-# Target rules for targets named recognition
-
-# Build rule for target.
-recognition: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 recognition
-.PHONY : recognition
-
-# fast build rule for target.
-recognition/fast:
-	$(MAKE) $(MAKESILENT) -f recognition/include/CMakeFiles/recognition.dir/build.make recognition/include/CMakeFiles/recognition.dir/build
-.PHONY : recognition/fast
-
-#=============================================================================
-# Target rules for targets named RubiksCubeApp
-
-# Build rule for target.
-RubiksCubeApp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RubiksCubeApp
+# Convenience name for target.
+RubiksCubeApp: src/CMakeFiles/RubiksCubeApp.dir/rule
 .PHONY : RubiksCubeApp
 
 # fast build rule for target.
 RubiksCubeApp/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/RubiksCubeApp.dir/build.make src/CMakeFiles/RubiksCubeApp.dir/build
+	cd /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/RubiksCubeApp.dir/build.make src/CMakeFiles/RubiksCubeApp.dir/build
 .PHONY : RubiksCubeApp/fast
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	cd /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/RubiksCubeApp.dir/build.make src/CMakeFiles/RubiksCubeApp.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	cd /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/RubiksCubeApp.dir/build.make src/CMakeFiles/RubiksCubeApp.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	cd /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/RubiksCubeApp.dir/build.make src/CMakeFiles/RubiksCubeApp.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -239,10 +212,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... RubiksCubeApp"
-	@echo "... classifier"
-	@echo "... detector"
-	@echo "... preprocessor"
-	@echo "... recognition"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
@@ -254,6 +226,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

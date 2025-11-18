@@ -38,10 +38,10 @@
 /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/recognition/include/CMakeFiles/install.dir
 /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/recognition/include/CMakeFiles/install/local.dir
 /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/recognition/include/CMakeFiles/install/strip.dir
-/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/recognition/src/CMakeFiles/RubiksCubeApp.dir
-/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/recognition/src/CMakeFiles/edit_cache.dir
-/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/recognition/src/CMakeFiles/rebuild_cache.dir
-/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/recognition/src/CMakeFiles/list_install_components.dir
-/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/recognition/src/CMakeFiles/install.dir
-/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/recognition/src/CMakeFiles/install/local.dir
-/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/recognition/src/CMakeFiles/install/strip.dir
+/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/src/CMakeFiles/RubiksCubeApp.dir
+/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/src/CMakeFiles/edit_cache.dir
+/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/src/CMakeFiles/rebuild_cache.dir
+/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/src/CMakeFiles/list_install_components.dir
+/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/src/CMakeFiles/install.dir
+/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/src/CMakeFiles/install/local.dir
+/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/src/CMakeFiles/install/strip.dir

@@ -9,3 +9,4 @@ set(OpenCV_DIR /opt/homebrew/opt/opencv/share/opencv4)
 find_package(OpenCV REQUIRED)
 
 add_subdirectory(recognition)
+add_subdirectory(src)
