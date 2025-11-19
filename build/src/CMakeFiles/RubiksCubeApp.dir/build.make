@@ -135,6 +135,7 @@ src/RubiksCubeApp: /opt/homebrew/lib/libopencv_wechat_qrcode.4.12.0.dylib
 src/RubiksCubeApp: /opt/homebrew/lib/libopencv_xfeatures2d.4.12.0.dylib
 src/RubiksCubeApp: /opt/homebrew/lib/libopencv_xobjdetect.4.12.0.dylib
 src/RubiksCubeApp: /opt/homebrew/lib/libopencv_xphoto.4.12.0.dylib
+src/RubiksCubeApp: /opt/homebrew/lib/libglfw.dylib
 src/RubiksCubeApp: /opt/homebrew/lib/libopencv_phase_unwrapping.4.12.0.dylib
 src/RubiksCubeApp: /opt/homebrew/lib/libopencv_optflow.4.12.0.dylib
 src/RubiksCubeApp: /opt/homebrew/lib/libopencv_highgui.4.12.0.dylib

@@ -207,7 +207,7 @@ int main() {
                 cv::rectangle(cubeFace, r, cv::Scalar(0,0,0), 2);
             }
 
-            cv::imshow("Last Saved Cube Side", cubeFace);
+            cv::imshow("Last Saved Cube", cubeFace);
         }
 
         if (cv::waitKey(30) == 27) {
