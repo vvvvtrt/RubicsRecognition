@@ -1,2 +1,0 @@
-/usr/bin/ar qc libinclude.a CMakeFiles/include.dir/recognition.cpp.o
-/usr/bin/ranlib libinclude.a
