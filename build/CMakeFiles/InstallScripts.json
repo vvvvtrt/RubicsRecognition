@@ -1,0 +1,14 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/cmake_install.cmake",
+		"/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/recognition/cmake_install.cmake",
+		"/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/recognition/detector/cmake_install.cmake",
+		"/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/recognition/preprocessor/cmake_install.cmake",
+		"/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/recognition/classifier/cmake_install.cmake",
+		"/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/recognition/include/cmake_install.cmake",
+		"/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/gui/cmake_install.cmake",
+		"/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/src/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
