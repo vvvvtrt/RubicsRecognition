@@ -25,3 +25,5 @@
 ![распознование](https://github.com/vvvvtrt/RubicsRecognition/blob/main/photo_works/cube2.jpg?raw=true)
 
 После сканирования всех граней, будет построенна 3д модель кубика
+
+![показ](https://github.com/vvvvtrt/RubicsRecognition/blob/main/photo_works/cube3d.jpg?raw=true)
