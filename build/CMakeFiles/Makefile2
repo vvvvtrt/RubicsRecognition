@@ -64,23 +64,46 @@ CMAKE_BINARY_DIR = /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/bu
 
 # The main recursive "all" target.
 all: recognition/all
+all: gui/all
 all: src/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: recognition/codegen
+codegen: gui/codegen
 codegen: src/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
 preinstall: recognition/preinstall
+preinstall: gui/preinstall
 preinstall: src/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: recognition/clean
+clean: gui/clean
 clean: src/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory gui
+
+# Recursive "all" directory target.
+gui/all: gui/CMakeFiles/gui.dir/all
+.PHONY : gui/all
+
+# Recursive "codegen" directory target.
+gui/codegen: gui/CMakeFiles/gui.dir/codegen
+.PHONY : gui/codegen
+
+# Recursive "preinstall" directory target.
+gui/preinstall:
+.PHONY : gui/preinstall
+
+# Recursive "clean" directory target.
+gui/clean: gui/CMakeFiles/gui.dir/clean
+.PHONY : gui/clean
 
 #=============================================================================
 # Directory level rules for directory recognition
@@ -247,7 +270,7 @@ recognition/detector/CMakeFiles/detector.dir/clean:
 recognition/preprocessor/CMakeFiles/preprocessor.dir/all:
 	$(MAKE) $(MAKESILENT) -f recognition/preprocessor/CMakeFiles/preprocessor.dir/build.make recognition/preprocessor/CMakeFiles/preprocessor.dir/depend
 	$(MAKE) $(MAKESILENT) -f recognition/preprocessor/CMakeFiles/preprocessor.dir/build.make recognition/preprocessor/CMakeFiles/preprocessor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles --progress-num=7,8 "Built target preprocessor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles --progress-num=9,10 "Built target preprocessor"
 .PHONY : recognition/preprocessor/CMakeFiles/preprocessor.dir/all
 
 # Build rule for subdir invocation for target.
@@ -264,7 +287,7 @@ preprocessor: recognition/preprocessor/CMakeFiles/preprocessor.dir/rule
 # codegen rule for target.
 recognition/preprocessor/CMakeFiles/preprocessor.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f recognition/preprocessor/CMakeFiles/preprocessor.dir/build.make recognition/preprocessor/CMakeFiles/preprocessor.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles --progress-num=7,8 "Finished codegen for target preprocessor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles --progress-num=9,10 "Finished codegen for target preprocessor"
 .PHONY : recognition/preprocessor/CMakeFiles/preprocessor.dir/codegen
 
 # clean rule for target.
@@ -313,7 +336,7 @@ recognition/include/CMakeFiles/recognition.dir/all: recognition/preprocessor/CMa
 recognition/include/CMakeFiles/recognition.dir/all: recognition/classifier/CMakeFiles/classifier.dir/all
 	$(MAKE) $(MAKESILENT) -f recognition/include/CMakeFiles/recognition.dir/build.make recognition/include/CMakeFiles/recognition.dir/depend
 	$(MAKE) $(MAKESILENT) -f recognition/include/CMakeFiles/recognition.dir/build.make recognition/include/CMakeFiles/recognition.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles --progress-num=9,10 "Built target recognition"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles --progress-num=11,12 "Built target recognition"
 .PHONY : recognition/include/CMakeFiles/recognition.dir/all
 
 # Build rule for subdir invocation for target.
@@ -330,13 +353,48 @@ recognition: recognition/include/CMakeFiles/recognition.dir/rule
 # codegen rule for target.
 recognition/include/CMakeFiles/recognition.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f recognition/include/CMakeFiles/recognition.dir/build.make recognition/include/CMakeFiles/recognition.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles --progress-num=9,10 "Finished codegen for target recognition"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles --progress-num=11,12 "Finished codegen for target recognition"
 .PHONY : recognition/include/CMakeFiles/recognition.dir/codegen
 
 # clean rule for target.
 recognition/include/CMakeFiles/recognition.dir/clean:
 	$(MAKE) $(MAKESILENT) -f recognition/include/CMakeFiles/recognition.dir/build.make recognition/include/CMakeFiles/recognition.dir/clean
 .PHONY : recognition/include/CMakeFiles/recognition.dir/clean
+
+#=============================================================================
+# Target rules for target gui/CMakeFiles/gui.dir
+
+# All Build rule for target.
+gui/CMakeFiles/gui.dir/all: recognition/detector/CMakeFiles/detector.dir/all
+gui/CMakeFiles/gui.dir/all: recognition/preprocessor/CMakeFiles/preprocessor.dir/all
+gui/CMakeFiles/gui.dir/all: recognition/classifier/CMakeFiles/classifier.dir/all
+gui/CMakeFiles/gui.dir/all: recognition/include/CMakeFiles/recognition.dir/all
+	$(MAKE) $(MAKESILENT) -f gui/CMakeFiles/gui.dir/build.make gui/CMakeFiles/gui.dir/depend
+	$(MAKE) $(MAKESILENT) -f gui/CMakeFiles/gui.dir/build.make gui/CMakeFiles/gui.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles --progress-num=7,8 "Built target gui"
+.PHONY : gui/CMakeFiles/gui.dir/all
+
+# Build rule for subdir invocation for target.
+gui/CMakeFiles/gui.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles 10
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gui/CMakeFiles/gui.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles 0
+.PHONY : gui/CMakeFiles/gui.dir/rule
+
+# Convenience name for target.
+gui: gui/CMakeFiles/gui.dir/rule
+.PHONY : gui
+
+# codegen rule for target.
+gui/CMakeFiles/gui.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f gui/CMakeFiles/gui.dir/build.make gui/CMakeFiles/gui.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles --progress-num=7,8 "Finished codegen for target gui"
+.PHONY : gui/CMakeFiles/gui.dir/codegen
+
+# clean rule for target.
+gui/CMakeFiles/gui.dir/clean:
+	$(MAKE) $(MAKESILENT) -f gui/CMakeFiles/gui.dir/build.make gui/CMakeFiles/gui.dir/clean
+.PHONY : gui/CMakeFiles/gui.dir/clean
 
 #=============================================================================
 # Target rules for target src/CMakeFiles/RubiksCubeApp.dir
@@ -346,6 +404,7 @@ src/CMakeFiles/RubiksCubeApp.dir/all: recognition/detector/CMakeFiles/detector.d
 src/CMakeFiles/RubiksCubeApp.dir/all: recognition/preprocessor/CMakeFiles/preprocessor.dir/all
 src/CMakeFiles/RubiksCubeApp.dir/all: recognition/classifier/CMakeFiles/classifier.dir/all
 src/CMakeFiles/RubiksCubeApp.dir/all: recognition/include/CMakeFiles/recognition.dir/all
+src/CMakeFiles/RubiksCubeApp.dir/all: gui/CMakeFiles/gui.dir/all
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/RubiksCubeApp.dir/build.make src/CMakeFiles/RubiksCubeApp.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/RubiksCubeApp.dir/build.make src/CMakeFiles/RubiksCubeApp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles --progress-num=1,2 "Built target RubiksCubeApp"
@@ -353,7 +412,7 @@ src/CMakeFiles/RubiksCubeApp.dir/all: recognition/include/CMakeFiles/recognition
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/RubiksCubeApp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/RubiksCubeApp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/RubiksCubeApp.dir/rule

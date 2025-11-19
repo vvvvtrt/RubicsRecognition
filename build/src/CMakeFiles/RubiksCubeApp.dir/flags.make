@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DGL_SILENCE_DEPRECATION
 
-CXX_INCLUDES = -I/opt/homebrew/include -I/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/src/.. -I/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/detector/.. -I/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/preprocessor/.. -I/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/classifier/.. -I/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/opencv/4.12.0_14/include/opencv4
+CXX_INCLUDES = -I/opt/homebrew/include -I/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/src/.. -I/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/detector/.. -I/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/preprocessor/.. -I/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/classifier/.. -I/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/include -I/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/gui/.. -I/opt/homebrew/Cellar/glfw/3.4/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/opencv/4.12.0_14/include/opencv4
 
 CXX_FLAGSarm64 = -std=gnu++17 -arch arm64
 

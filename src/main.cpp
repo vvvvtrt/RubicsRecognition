@@ -7,6 +7,7 @@
 #include <algorithm>
 #include <string>
 #include "recognition.hpp"
+#include <gui/display.hpp>
 
 
 int main() {
@@ -185,6 +186,9 @@ int main() {
             if (input == "y" || input == "Y") {
                 saveColors.push_back(clusteredColors);
                 std::cout << "Colors saved. Total saved sets: " << saveColors.size() << std::endl;
+                if (saveColors.size() >= 6) {
+                    break;
+                }
             }
         }
 
@@ -217,5 +221,11 @@ int main() {
     }
     
     cv::destroyAllWindows();
+
+
+    RubiksCubeApp app(saveColors);
+    app.run();
+
+
     return 0;
 }

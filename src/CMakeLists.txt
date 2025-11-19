@@ -28,6 +28,7 @@ target_link_libraries(RubiksCubeApp
     preprocessor
     classifier
     recognition
+    gui
     ${OpenCV_LIBS}
     ${GLFW3_LIBRARY}
 )

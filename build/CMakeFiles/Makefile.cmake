@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/4.1.2/CMakeCCompiler.cmake"
   "CMakeFiles/4.1.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.1.2/CMakeSystem.cmake"
+  "/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/gui/CMakeLists.txt"
   "/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/CMakeLists.txt"
   "/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/classifier/CMakeLists.txt"
   "/Users/mikhail/Documents/CppProjects/RubiksCubeRecognition/recognition/detector/CMakeLists.txt"
@@ -69,6 +70,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "recognition/preprocessor/CMakeFiles/CMakeDirectoryInformation.cmake"
   "recognition/classifier/CMakeFiles/CMakeDirectoryInformation.cmake"
   "recognition/include/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "gui/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -78,5 +80,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "recognition/preprocessor/CMakeFiles/preprocessor.dir/DependInfo.cmake"
   "recognition/classifier/CMakeFiles/classifier.dir/DependInfo.cmake"
   "recognition/include/CMakeFiles/recognition.dir/DependInfo.cmake"
+  "gui/CMakeFiles/gui.dir/DependInfo.cmake"
   "src/CMakeFiles/RubiksCubeApp.dir/DependInfo.cmake"
   )
