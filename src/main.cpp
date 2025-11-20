@@ -1,8 +1,4 @@
 #include <opencv2/opencv.hpp>
-/*#include <preprocessor/preprocessor.hpp>
-#include <detector/detector.hpp>
-#include <classifier/classifier.hpp>
-#include <utils/circut.hpp>*/
 #include <map>
 #include <algorithm>
 #include <string>
@@ -43,12 +39,6 @@ int main() {
             cubeBox = *maxIt;
             cubeDetected = true;
             
-            /*cv::rectangle(frame, cubeBox.start, cubeBox.end, 
-                cv::Scalar(255, 0, 255), 2);
-            cv::putText(frame, "Rubik Cube",
-                cv::Point(cubeBox.start.x, cubeBox.start.y - 10),
-                cv::FONT_HERSHEY_SIMPLEX, 0.7,
-                cv::Scalar(255, 0, 255), 2);*/
         }
         
         std::vector<Circuit> selected;
@@ -152,26 +142,6 @@ int main() {
                 cv::Scalar(255, 255, 255),
                 2);
             
-
-            /*std::string bgrText = cv::format("Orig: B:%d G:%d R:%d", 
-                originalColor[0], originalColor[1], originalColor[2]);
-            cv::putText(frame,
-                bgrText,
-                cv::Point(c.start.x, c.end.y + 20),
-                cv::FONT_HERSHEY_SIMPLEX,
-                0.35,
-                cv::Scalar(200, 200, 200),
-                1);
-
-            std::string clusterText = cv::format("Clust: B:%d G:%d R:%d", 
-                color[0], color[1], color[2]);
-            cv::putText(frame,
-                clusterText,
-                cv::Point(c.start.x, c.end.y + 35),
-                cv::FONT_HERSHEY_SIMPLEX,
-                0.35,
-                cv::Scalar(255, 255, 0),
-                1);*/
         }
         
         
