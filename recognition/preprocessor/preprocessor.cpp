@@ -3,7 +3,7 @@
 
 
 
-cv::Mat process(const cv::Mat& image){
+cv::Mat DilateProcessor::process(const cv::Mat& image){
         cv::Mat imgGray, imgBlur, imgCanny, imgDil, imgCLAHE;
 
         cv::cvtColor(image, imgGray, cv::COLOR_BGR2GRAY);
